@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--JavaScript入門講座 textareaオブジェクト http://javascript.pc-users.net/browser/form/textarea.html-->
+<!--HTMLで文字エンコーディングを指定する https://www.w3.org/International/questions/qa-html-encoding-declarations.ja-->>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>JavaScript textarea</title>
+  <script type="text/javascript">
+  function dispTextarea(){
+
+  	var tarea  = document.fm.tarea.value;
+  	alert('入力した値は\n'  + tarea + '\nです' );
+
+  }
+  </script>
+</head>
+<body>
+  <form name="fm">
+  フォーム内のテキストエリアの入力値を表示<br>
+  <textarea name="tarea" rows="50" cols="50">
+  </textarea><br>
+    <input type="button" value="Generate" onclick="dispTextarea()">
+  </form>
+</body>
+</html>					
